@@ -1,10 +1,10 @@
 //TODO: fix credentials
 export const fromEmail = "ocie.lebsack@ethereal.email";
 export const mailOptions = {
-  host: "smtp.ethereal.email",
-  port: 587,
+  host: process.env.MAIL_HOST,
+  port: process.env.MAIL_PORT,
   auth: {
-    user: "ocie.lebsack@ethereal.email",
-    pass: "W5mD2pQeyjNaN4Fy6s",
+    user: process.env.MAIL_USER, 
+    pass: process.env.MAIL_PASSWORD,
   },
 };
